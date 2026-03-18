@@ -1,10 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import PrayerTimes from './PrayerTimes';
 
 const App = () => {
   return (
     <Router>
       <Switch>
+        <Route path="/" exact>
+          <PrayerTimes />
+        </Route>
+        <Route path="/prayer-times">
+          <PrayerTimes />
+        </Route>
         <Route path="/category1">
           <h1>Category 1</h1>
         </Route>
